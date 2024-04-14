@@ -1,0 +1,103 @@
+ /* CSS-Stiles hier einfügen */
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.column {
+  position: relative;
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.delete-column-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+}
+
+.delete-column-btn:hover {
+  color: #f00;
+}
+
+.card {
+  position: relative;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor: grab;
+}
+
+.card-content {
+  display: inline-block;
+}
+
+.delete-task-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+}
+
+.delete-task-btn:hover {
+  color: #f00;
+}
+
+.add-card-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.add-column-btn {
+  margin: 30px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-todo {
+  background-color: #ca2f49;
+}
+
+.card-inProgress {
+  background-color: #ffdd00;
+}
+
+.card-done {
+  background-color: #28a745;
+}
