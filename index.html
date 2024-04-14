@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heftige Kanban Board</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="container">
+      <div class="column" id="todo" ondrop="drop(event, 'todo')" ondragover="allowDrop(event)">
+          <h2>To Do</h2>
+          <button onclick="createCard('todo')">Add New Card</button>
+      </div>
+      <div class="column" id="inProgress" ondrop="drop(event, 'inProgress')" ondragover="allowDrop(event)">
+          <h2>In Progress</h2>
+          <button onclick="createCard('inProgress')">Add New Card</button>
+      </div>
+      <div class="column" id="test" ondrop="drop(event, 'test')" ondragover="allowDrop(event)">
+        <h2>Test/Review</h2>
+        <button onclick="createCard('test')">Add New Card</button>
+    </div>
+      <div class="column" id="done" ondrop="drop(event, 'done')" ondragover="allowDrop(event)">
+          <h2>Done</h2>
+          <button onclick="createCard('done')">Add New Card</button>
+      </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
